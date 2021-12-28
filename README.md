@@ -25,6 +25,9 @@ update-alternatives --config python
 # 移除替代版本
 update-alternatives --remove python /usr/bin/python2.7
 
+# 安裝套件無法成功時 pip版本太老先更新再安裝套件
+sudo -H pip3 install --upgrade pip
+
 
 
 # 失敗就加sudo
