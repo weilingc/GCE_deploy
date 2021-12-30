@@ -49,6 +49,30 @@ apt-get install build-essential python-dev
 
 
 
+# VM+nginx+uwsgi 常用指令紀錄
+
+sudo nginx -s reload      (((site-available那一層
+uwsgi {your_project_name}.ini      (((專案資料夾那一層
+
+記錄自己的專案路徑
+/home/madeintw66/AItouille
+
+紀錄nginx設定路徑
+/etc/nginx/sites-available
+
+檢查組態檔
+more /etc/nginx/sites-available/{your_project_name}.conf
+
+看uwsgi的log吧?
+tail -f {your_project_name}.log
+
+檢查現有啟動服務
+ps -ef | grep uwsgi
+
+停止uwsgi服務
+kill {uwsgi id}
+
+
 
 # https://www.nbshare.io/notebook/228803083/How-to-Upgrade-Python-PIP/
 # https://ywnz.com/linux/6041.html
