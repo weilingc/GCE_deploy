@@ -83,7 +83,9 @@ kill {uwsgi id}
 專案資料夾同一層的隱藏版 .bashrc 設定環境變數
 設定完之後下 source .bashrc 啟動環境變數
 
+<img width="193" alt="2022-01-04_12h55_20" src="https://user-images.githubusercontent.com/66947341/148011267-510002e7-a4bb-45a1-826f-2409a77487e3.png">
 
+<img width="237" alt="2022-01-04_12h55_46" src="https://user-images.githubusercontent.com/66947341/148011292-24c91f8d-7f22-4748-83a6-afec61189812.png">
 
 
 
