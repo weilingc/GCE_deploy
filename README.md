@@ -74,6 +74,25 @@ kill {uwsgi id}
 
 
 
+
+
+----2022.01.04更新----
+環境:
+建議ubuntu20.04
+安裝python就會是較新版本3.8.10
+專案資料夾同一層的隱藏版 .bashrc 設定環境變數
+設定完之後下 source .bashrc 啟動環境變數
+
+
+
+
+
+
+
+
+
+
+
 # https://www.nbshare.io/notebook/228803083/How-to-Upgrade-Python-PIP/
 # https://ywnz.com/linux/6041.html
 # https://codertw.com/%E7%A8%8B%E5%BC%8F%E8%AA%9E%E8%A8%80/367294/
