@@ -91,10 +91,13 @@ kill {uwsgi id}
 
 
 
-
-
-
-
 # https://www.nbshare.io/notebook/228803083/How-to-Upgrade-Python-PIP/
 # https://ywnz.com/linux/6041.html
 # https://codertw.com/%E7%A8%8B%E5%BC%8F%E8%AA%9E%E8%A8%80/367294/
+
+
+
+
+
+# 同一台VM, 多個location配置(案例為網頁和webhook), 注意要下 root 或 alias, 否則路徑抓不到
+<img width="434" alt="2022-01-07_10h33_55" src="https://user-images.githubusercontent.com/66947341/148482076-53d60f32-5236-49b4-907b-a65c570536b5.png">
