@@ -1,14 +1,13 @@
 # GCE_deploy
 
-
+# 環境設定
 .bashrc
 source .bashrc
 
-# export一定要加
-export LIFF_ID='xxxx'
+# export語法
+e.g. export LIFF_ID='xxxx'
 
-
-ubuntu 18.04
+# 確認環境中有那些python版本
 ls /usr/bin/python*
 
 # 簡單運行python的替代版本
@@ -28,8 +27,6 @@ update-alternatives --remove python /usr/bin/python2.7
 # 安裝套件無法成功時 pip版本太老先更新再安裝套件
 sudo -H pip3 install --upgrade pip
 
-
-
 # 失敗就加sudo
 sudo apt-get update
 wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
@@ -45,10 +42,6 @@ sudo apt install python3.8
 # 可能的噴錯
 https://stackoverflow.com/questions/20497339/installing-numpy-with-pip-fails-on-ubuntu
 apt-get install build-essential python-dev
-
-
-
-
 
 # VM+nginx+uwsgi 常用指令紀錄
 
@@ -74,9 +67,6 @@ ps -ef | grep uwsgi
 kill {uwsgi id}
 
 
-
-
-
 ----2022.01.04更新----
 環境:
 建議ubuntu21.04
@@ -85,10 +75,7 @@ kill {uwsgi id}
 設定完之後下 source .bashrc 啟動環境變數
 
 <img width="193" alt="2022-01-04_12h55_20" src="https://user-images.githubusercontent.com/66947341/148011267-510002e7-a4bb-45a1-826f-2409a77487e3.png">
-
 <img width="237" alt="2022-01-04_12h55_46" src="https://user-images.githubusercontent.com/66947341/148011292-24c91f8d-7f22-4748-83a6-afec61189812.png">
-
-
 
 ref:
 https://www.nbshare.io/notebook/228803083/How-to-Upgrade-Python-PIP/
@@ -96,15 +83,8 @@ https://ywnz.com/linux/6041.html
 https://codertw.com/%E7%A8%8B%E5%BC%8F%E8%AA%9E%E8%A8%80/367294/
 
 
-
-
-
 # 同一台VM, 多個location配置(案例為網頁和webhook), 注意要下 root 或 alias, 否則路徑抓不到
 <img width="434" alt="2022-01-07_10h33_55" src="https://user-images.githubusercontent.com/66947341/148482076-53d60f32-5236-49b4-907b-a65c570536b5.png">
-
-
-
-
 
 # 生成SSH鑰匙，不管在哪裡都可以透過SSH登入寫code
 1. GCE介面中點選
@@ -112,8 +92,17 @@ GCE側邊欄位置 -> 設定中的"中繼資料" -> 安全殼層金鑰 -> 編輯
 在mobexterm中tools中SSHkeygen 生成private key -> key內容貼上到上面新增項目內容裡。繼續生成public key另存起來。
 可以在mobexterm中用private key+輸入使用者名稱~就可登入了
 
-2. 下指令
-
 ref:
 https://cloud.google.com/compute/docs/instances/ssh
 https://zh.wikipedia.org/wiki/Secure_Shell
+
+
+
+
+
+#
+
+
+# 待處理:
+用gcloud語法生成SSH key
+練習多個雲端平台VM部署---try用docker打包image---再放到vm裡面?省時間
