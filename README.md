@@ -42,7 +42,8 @@ pip install --upgrade pip
 pip3 install -r requirements.txt
 sudo apt install python3.8
 
-# https://stackoverflow.com/questions/20497339/installing-numpy-with-pip-fails-on-ubuntu
+# 可能的噴錯
+https://stackoverflow.com/questions/20497339/installing-numpy-with-pip-fails-on-ubuntu
 apt-get install build-essential python-dev
 
 
@@ -89,11 +90,10 @@ kill {uwsgi id}
 
 
 
-
-
-# https://www.nbshare.io/notebook/228803083/How-to-Upgrade-Python-PIP/
-# https://ywnz.com/linux/6041.html
-# https://codertw.com/%E7%A8%8B%E5%BC%8F%E8%AA%9E%E8%A8%80/367294/
+ref:
+https://www.nbshare.io/notebook/228803083/How-to-Upgrade-Python-PIP/
+https://ywnz.com/linux/6041.html
+https://codertw.com/%E7%A8%8B%E5%BC%8F%E8%AA%9E%E8%A8%80/367294/
 
 
 
@@ -101,3 +101,19 @@ kill {uwsgi id}
 
 # 同一台VM, 多個location配置(案例為網頁和webhook), 注意要下 root 或 alias, 否則路徑抓不到
 <img width="434" alt="2022-01-07_10h33_55" src="https://user-images.githubusercontent.com/66947341/148482076-53d60f32-5236-49b4-907b-a65c570536b5.png">
+
+
+
+
+
+# 生成SSH鑰匙，不管在哪裡都可以透過SSH登入寫code
+1. GCE介面中點選
+GCE側邊欄位置 -> 設定中的"中繼資料" -> 安全殼層金鑰 -> 編輯 -> 新增項目。
+在mobexterm中tools中SSHkeygen 生成private key -> key內容貼上到上面新增項目內容裡。繼續生成public key另存起來。
+可以在mobexterm中用private key+輸入使用者名稱~就可登入了
+
+2. 下指令
+
+ref:
+https://cloud.google.com/compute/docs/instances/ssh
+https://zh.wikipedia.org/wiki/Secure_Shell
