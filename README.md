@@ -118,7 +118,7 @@ https://blog.csdn.net/zhizhengguan/article/details/83625797
 
 
 
-# 打包docker image, 放到GCP使用
+# 靜態網頁-----打包docker image, 放到GCP使用
 
 啟用: Google Container Registry API
 到Container Registry那邊看一下專案ID和地區
@@ -137,10 +137,10 @@ docker pull {映像檔名稱}:{TAG}
 docker tag {映像檔名稱}:{TAG} {地區/專案ID/資料夾}
 e.g. docker tag boxingbb/html:1.0 gcr.io/vaulted-bus-334103/boxingbb
 
-再用cloud run取用這個映像檔運行就可以了~~
 
 ref:
 https://cloud.google.com/container-registry/docs/pushing-and-pulling
+https://penueling.com/%E6%8A%80%E8%A1%93%E7%AD%86%E8%A8%98/%E4%BD%BF%E7%94%A8docker%E6%8A%8A%E7%B6%B2%E7%AB%99%E9%83%A8%E7%BD%B2%E5%88%B0gcp/
 
 
 
