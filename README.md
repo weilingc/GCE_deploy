@@ -101,8 +101,17 @@ https://zh.wikipedia.org/wiki/Secure_Shell
 
 
 #
+1. 下載docker&打包
+sudo apt-get install docker.io
+docker pull nginx
 
+2. 將打包好的image放到另一個環境中使用
+
+
+ref:
+https://blog.csdn.net/zhizhengguan/article/details/83625797
 
 # 待處理:
-用gcloud語法生成SSH key
-練習多個雲端平台VM部署---try用docker打包image---再放到vm裡面?省時間
+1. 用gcloud語法生成SSH key
+2. 練習多個雲端平台VM部署---try用docker打包image---再放到vm裡面或app engine?省時間
+3. 使用docker hub
