@@ -78,7 +78,7 @@ kill {uwsgi id}
 
 ----2022.01.04更新----
 環境:
-建議ubuntu2.04
+建議ubuntu21.04
 安裝python就會是較新版本3.8.10
 專案資料夾同一層的隱藏版 .bashrc 設定環境變數
 設定完之後下 source .bashrc 啟動環境變數
