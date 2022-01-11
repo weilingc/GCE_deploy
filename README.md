@@ -137,6 +137,11 @@ docker pull {映像檔名稱}:{TAG}
 docker tag {映像檔名稱}:{TAG} {地區/專案ID/資料夾}
 e.g. docker tag boxingbb/html:1.0 gcr.io/vaulted-bus-334103/boxingbb
 
+#推到container registry
+docker push {地區/專案ID/資料夾
+e.g docker push gcr.io/vaulted-bus-334103/boxingbb
+
+
 
 ref:
 https://cloud.google.com/container-registry/docs/pushing-and-pulling
@@ -147,4 +152,3 @@ https://penueling.com/%E6%8A%80%E8%A1%93%E7%AD%86%E8%A8%98/%E4%BD%BF%E7%94%A8doc
 # 待處理:
 1. 用gcloud語法生成SSH key
 2. 練習多個雲端平台VM部署---try用docker打包image---再放到vm裡面或app engine?省時間
-3. 使用docker hub
