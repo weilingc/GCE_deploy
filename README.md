@@ -111,6 +111,39 @@ docker pull nginx
 ref:
 https://blog.csdn.net/zhizhengguan/article/details/83625797
 
+
+
+
+
+
+
+
+# 打包docker image, 放到GCP使用
+
+啟用: Google Container Registry API
+到Container Registry那邊看一下專案ID和地區
+開啟cloud shell
+
+#確認裡面docker的版本
+docker version
+
+#登入dockerhub
+docker login
+
+#從dockerhub拉映像檔下來
+docker pull {映像檔名稱}:{TAG}
+
+#拉下來的映象檔和本機資料夾做tag
+docker tag {映像檔名稱}:{TAG} {地區/專案ID/資料夾}
+e.g. docker tag boxingbb/html:1.0 gcr.io/vaulted-bus-334103/boxingbb
+
+再用cloud run取用這個映像檔運行就可以了~~
+
+ref:
+https://cloud.google.com/container-registry/docs/pushing-and-pulling
+
+
+
 # 待處理:
 1. 用gcloud語法生成SSH key
 2. 練習多個雲端平台VM部署---try用docker打包image---再放到vm裡面或app engine?省時間
