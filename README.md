@@ -91,6 +91,22 @@ ps -ef | grep uwsgi
 kill {uwsgi id}
 
 
+# certbot機器人
+使用snap套件
+sudo snap install core; sudo snap refresh core
+sudo snap install --classic certbot
+
+建立link
+sudo ln -s /snap/bin/certbot /usr/bin/certbot
+
+安裝憑證
+sudo certbot --nginx
+
+
+extra ref:
+https://blog.miniasp.com/post/2021/05/09/Create-SSL-TLS-certificates-from-LetsEncrypt-using-Certbot-2
+
+
 ----2022.01.04更新----
 環境:
 建議ubuntu21.04
