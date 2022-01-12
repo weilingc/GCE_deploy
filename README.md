@@ -58,14 +58,16 @@ sudo apt-get install -y python3-pip
 sudo timedatectl set-timezone Asia/Taipei
 
 安裝nginx
-sudo apt-get install -y nginx\
+sudo apt-get install -y nginx
+
+安裝uwsgi
+pip3 install uwsgi
 
 檢視nginx內組態檔
 ls -l /etc/nginx
 
 連結組態檔 ln
 sudo ln -s /etc/nginx/sites-available/{project_name}.conf /etc/nginx/sites-enabled/{project_name}.conf
-
 
 sudo nginx -s reload      (((site-available那一層
 uwsgi {your_project_name}.ini      (((專案資料夾那一層
