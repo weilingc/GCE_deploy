@@ -72,6 +72,9 @@ sudo ln -s /etc/nginx/sites-available/{project_name}.conf /etc/nginx/sites-enabl
 sudo nginx -s reload      (((site-available那一層
 uwsgi {your_project_name}.ini      (((專案資料夾那一層
 
+刪除硬連結
+sudo rm -rf {檔案名}.conf
+
 記錄自己的專案路徑
 /home/madeintw66/AItouille
 
