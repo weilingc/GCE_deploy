@@ -99,8 +99,11 @@ sudo snap install --classic certbot
 建立link
 sudo ln -s /snap/bin/certbot /usr/bin/certbot
 
-安裝憑證
+安裝憑證---安裝後檢查conf檔案看有否成功
 sudo certbot --nginx
+
+刪除憑證
+sudo certbot delete --cert-name
 
 
 extra ref:
