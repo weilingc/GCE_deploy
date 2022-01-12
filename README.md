@@ -45,6 +45,28 @@ apt-get install build-essential python-dev
 
 # VM+nginx+uwsgi 常用指令紀錄
 
+更新ubuntu套件資料庫
+sudo apt-get update
+
+偷渡一個ngrok
+wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
+
+安裝pip3
+sudo apt-get install -y python3-pip
+
+改時區
+sudo timedatectl set-timezone Asia/Taipei
+
+安裝nginx
+sudo apt-get install -y nginx\
+
+檢視nginx內組態檔
+ls -l /etc/nginx
+
+連結組態檔 ln
+sudo ln -s /etc/nginx/sites-available/{project_name}.conf /etc/nginx/sites-enabled/{project_name}.conf
+
+
 sudo nginx -s reload      (((site-available那一層
 uwsgi {your_project_name}.ini      (((專案資料夾那一層
 
