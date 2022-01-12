@@ -111,6 +111,8 @@ sudo certbot delete --cert-name
 
 extra ref:
 https://blog.miniasp.com/post/2021/05/09/Create-SSL-TLS-certificates-from-LetsEncrypt-using-Certbot-2
+刪除nginx
+https://www.itread01.com/content/1545796456.html
 
 
 ----2022.01.04更新----
