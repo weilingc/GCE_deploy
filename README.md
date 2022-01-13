@@ -62,6 +62,7 @@ sudo apt-get install -y nginx
 
 安裝uwsgi
 pip3 install uwsgi
+cd; source .profile #這個很重要~~~~~~ 不然環境變數都會還沒有uwsgi喔~~~
 
 檢視nginx內組態檔
 ls -l /etc/nginx
